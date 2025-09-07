@@ -68,7 +68,7 @@ Mean Absolute Error (MAE)
 
 Insights: Feature importance analysis highlights key factors affecting ad revenue.
 
-📊 Streamlit App Features
+# Streamlit App Features
 
 Sidebar for entering video metrics and channel information.
 
