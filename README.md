@@ -4,7 +4,7 @@
 
 With YouTube being a major income source for creators and media companies, predicting ad revenue per video is critical for content strategy, revenue forecasting, and ad campaign planning. This project implements a predictive regression model and deploys it through a user-friendly Streamlit app.
 
-Key Features:
+# Key Features:
 
 Predict ad revenue based on video performance metrics and channel info.
 
@@ -16,7 +16,7 @@ Visual summaries with bar charts for key metrics.
 
 Supports multiple regression models: Linear Regression, Random Forest, Gradient Boosting.
 
-🛠 Tech Stack
+# Tech Stack
 
 Python – Core programming
 
@@ -28,7 +28,7 @@ Streamlit – Interactive web application
 
 Matplotlib / Seaborn – Data visualization
 
-📊 Business Use Cases
+# Business Use Cases
 
 Content Strategy Optimization: Identify high-performing video types.
 
@@ -38,13 +38,13 @@ Creator Support Tools: Provide actionable analytics for YouTubers.
 
 Ad Campaign Planning: Forecast ROI based on content metrics.
 
-📂 Dataset
+# Dataset
 
 Format: CSV (~122,000 rows)
 
 Target Variable: ad_revenue_usd
 
-Features:
+# Features:
 
 Performance: views, likes, comments, watch_time_minutes, video_length_minutes
 
@@ -54,20 +54,7 @@ Context: category, device, country
 
 Preprocessing Steps: Missing value handling (~5%), duplicate removal (~2%), categorical encoding, scaling, and outlier detection
 
-⚡ How to Run
-# Clone the repository
-git clone <repo_link>
-
-# Navigate to project folder
-cd YouTube-Monetization-Modeler
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the Streamlit app
-streamlit run app.py
-
-📈 Model & Evaluation
+# Model & Evaluation
 
 Regression Models Tested: Linear Regression, Random Forest, Gradient Boosting
 
