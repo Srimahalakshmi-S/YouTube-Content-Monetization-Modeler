@@ -1,41 +1,94 @@
 # YouTube-Content-Monetization-Modeler
 
-Problem Statement
-YouTube creators and media companies need to forecast revenue for content strategy, ad planning, and income estimation. This project predicts ad revenue using video performance and contextual features.
+💡 Project Overview
 
-Key Features
+With YouTube being a major income source for creators and media companies, predicting ad revenue per video is critical for content strategy, revenue forecasting, and ad campaign planning. This project implements a predictive regression model and deploys it through a user-friendly Streamlit app.
 
-Revenue Prediction: Input video metrics to get estimated ad revenue.
-Feature Engineering: Engagement rate, watch time ratio, views per minute.
-Interactive Visuals: Input summary and bar chart of key metrics.
-Preprocessing & Modeling: Handles missing values, categorical encoding, and applies the best regression model.
+Key Features:
 
-Tech Stack
-Python, Pandas, Numpy
-Scikit-learn (Linear Regression, Random Forest, Gradient Boosting)
-Streamlit (Web App)
-Matplotlib / Seaborn for visualizations
+Predict ad revenue based on video performance metrics and channel info.
 
-Business Use Cases
-Content Strategy Optimization – Identify high-return content.
-Revenue Forecasting – Predict expected income.
-Creator Support Tools – Analytics for YouTubers.
-Ad Campaign Planning – Forecast ROI based on content metrics.
+Feature engineering: engagement_rate, watch_time_ratio, views_per_min.
 
-Dataset
-Format: CSV (~122k rows)
-Target: ad_revenue_usd
-Key Features: views, likes, comments, watch_time_minutes, video_length_minutes, subscribers, category, device, country
+Interactive sidebar inputs for realistic scenario testing.
 
-How to Run:
-Install dependencies:
+Visual summaries with bar charts for key metrics.
+
+Supports multiple regression models: Linear Regression, Random Forest, Gradient Boosting.
+
+🛠 Tech Stack
+
+Python – Core programming
+
+Pandas / Numpy – Data manipulation & preprocessing
+
+Scikit-learn – Regression models & evaluation metrics
+
+Streamlit – Interactive web application
+
+Matplotlib / Seaborn – Data visualization
+
+📊 Business Use Cases
+
+Content Strategy Optimization: Identify high-performing video types.
+
+Revenue Forecasting: Estimate expected income from new uploads.
+
+Creator Support Tools: Provide actionable analytics for YouTubers.
+
+Ad Campaign Planning: Forecast ROI based on content metrics.
+
+📂 Dataset
+
+Format: CSV (~122,000 rows)
+
+Target Variable: ad_revenue_usd
+
+Features:
+
+Performance: views, likes, comments, watch_time_minutes, video_length_minutes
+
+Channel: subscribers
+
+Context: category, device, country
+
+Preprocessing Steps: Missing value handling (~5%), duplicate removal (~2%), categorical encoding, scaling, and outlier detection
+
+⚡ How to Run
+# Clone the repository
+git clone <repo_link>
+
+# Navigate to project folder
+cd YouTube-Monetization-Modeler
+
+# Install dependencies
 pip install -r requirements.txt
 
-Run the Streamlit app:
+# Run the Streamlit app
 streamlit run app.py
 
-Evaluation Metrics
-R² Score
-RMSE
-MAE
+📈 Model & Evaluation
 
+Regression Models Tested: Linear Regression, Random Forest, Gradient Boosting
+
+Evaluation Metrics:
+
+R² Score
+
+Root Mean Squared Error (RMSE)
+
+Mean Absolute Error (MAE)
+
+Insights: Feature importance analysis highlights key factors affecting ad revenue.
+
+📊 Streamlit App Features
+
+Sidebar for entering video metrics and channel information.
+
+Real-time ad revenue prediction.
+
+Input summary table with all entered features.
+
+Bar chart visualization of performance metrics.
+
+Clean, interactive, and user-friendly design.
